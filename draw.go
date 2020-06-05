@@ -1,10 +1,9 @@
 package DrawFont
 
-
 import (
 	/*
-	 #cgo LDFLAGS: -L./ -L/Volumes/Mac12/opt/X11/lib -lfreetype -lDrawBrush -lstdc++
-	 #cgo CFLAGS: -I./ -I/Volumes/Mac12/opt/X11/include/freetype2
+	 #cgo LDFLAGS: -L${SRCDIR}/Library -L/usr/local/lib -lfreetype -lDrawBrush -lstdc++
+	 #cgo CFLAGS: -I${SRCDIR}/Library -I/usr/local/include/freetype2
 	 #include "DrawBrush.h"
 	typedef struct FTLibrary ft_library;
 	typedef struct RGBA Color32;
@@ -22,7 +21,6 @@ import (
 	}
 
 	typedef struct Result Result;
-
 	*/
 	"C"
 	"image"
